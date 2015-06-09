@@ -71,7 +71,6 @@ GEM
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
-    rainbow (2.0.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -80,9 +79,6 @@ GEM
     sass (3.4.13)
     sassy-maps (0.4.0)
       sass (~> 3.3)
-    scss-lint (0.37.0)
-      rainbow (~> 2.0)
-      sass (~> 3.4.1)
     timers (4.0.1)
       hitimes
     toml (0.1.2)
@@ -100,5 +96,4 @@ DEPENDENCIES
   gemrat
   jekyll (>= 2.4.0)
   sass (>= 3.4.6)
-  scss-lint (= 0.37.0)
   zen-grids (>= 1.4.0)

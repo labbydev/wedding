@@ -17,9 +17,6 @@
     "url": "https://github.com/labyrwa/fed-automation/issues"
   },
   "homepage": "https://github.com/labyrwa/fed-automation",
-  // Uses wildcards so that on first install, the most up to date versions
-  // will be used. When fed-init.sh is run, the wildcards will be replaced by
-  // the version which was installed at the time.
   "devDependencies": {
     "browser-sync": "*",
     "compass-options": "*",
