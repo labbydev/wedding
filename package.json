@@ -1,0 +1,41 @@
+{
+  "name": "fed-automation",
+  "version": "1.0.0",
+  "description": "The beginnings of a Jekyll based style guide creation tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labyrwa/fed-automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/labyrwa/fed-automation/issues"
+  },
+  "homepage": "https://github.com/labyrwa/fed-automation",
+  // Uses wildcards so that on first install, the most up to date versions
+  // will be used. When fed-init.sh is run, the wildcards will be replaced by
+  // the version which was installed at the time.
+  "devDependencies": {
+    "browser-sync": "*",
+    "compass-options": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-changed": "*",
+    "gulp-compass": "*",
+    "gulp-cssmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-scsslint": "*",
+    "gulp-sitespeedio": "*",
+    "gulp-inject": "*",
+    "gulp-jscs": "*",
+    "gulp-jshint": "*",
+    "gulp-rename": "*",
+    "gulp-scsslint": "*",
+    "gulp-uglify": "*"
+  }
+}

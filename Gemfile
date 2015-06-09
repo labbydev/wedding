@@ -1,0 +1,9 @@
+source "https://rubygems.org"
+
+gem 'gemrat'
+
+gem 'compass', '>= 1.1.0.alpha.3'
+gem 'breakpoint', '>= 2.4.2'
+gem 'zen-grids', '>= 1.4.0'
+gem 'sass', '>= 3.4.6'
+gem 'jekyll', '>= 2.4.0'
