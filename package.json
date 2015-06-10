@@ -1,38 +1,36 @@
 {
-  "name": "fed-automation",
+  "name": "wedding",
   "version": "1.0.0",
-  "description": "The beginnings of a Jekyll based style guide creation tool.",
+  "description": "Byrwa-Burroughs Wedding Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/labyrwa/fed-automation.git"
+    "url": "https://github.com/labyrwa/wedding.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/labyrwa/fed-automation/issues"
+    "url": "https://github.com/labyrwa/wedding/issues"
   },
-  "homepage": "https://github.com/labyrwa/fed-automation",
+  "homepage": "https://github.com/labyrwa/wedding",
   "devDependencies": {
-    "browser-sync": "*",
-    "compass-options": "*",
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-changed": "*",
-    "gulp-compass": "*",
-    "gulp-cssmin": "*",
-    "gulp-imagemin": "*",
-    "gulp-scsslint": "*",
-    "gulp-sitespeedio": "*",
-    "gulp-inject": "*",
-    "gulp-jscs": "*",
-    "gulp-jshint": "*",
-    "gulp-rename": "*",
-    "gulp-scsslint": "*",
-    "gulp-uglify": "*"
+    "browser-sync": "^2.7.7",
+    "compass-options": "^0.1.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-changed": "^1.2.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-inject": "^1.2.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-scsslint": "0.0.5",
+    "gulp-sitespeedio": "0.0.5",
+    "gulp-uglify": "^1.2.0"
   }
 }
