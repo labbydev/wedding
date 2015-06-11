@@ -4,8 +4,8 @@
 // Copyright Lauren A Byrwa 2015
 //
 
-;( function ( $ ) {
-  'use strict';
+;( function( $ ) {
+  "use strict";
 
   // Add custom javascript here
 
