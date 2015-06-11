@@ -1,0 +1,98 @@
+<!--wraps every page and renders jekyll content in the middle. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pop Champagne for Lauren & Shane : Basic Form Elements</title>
+    <meta name="viewport" content="width=device-width">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- endinject -->
+    <!-- Google Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Raleway:600,800,400,200' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body id="">
+
+    <div class="content-wrapper">
+      <header class="container styleguide-header">
+  <div class="l-1up">
+      <h1 class="site-name--styleguide">
+        <a href="/index.html">Pop Champagne for Lauren & Shane</a>
+      </h1>
+  </div>
+</header>
+
+<section class="container">
+  <div class="l-1up styleguide-body">
+    <nav class="styleguide-breadcrumbs"><a href="/">styleguide</a> › elements</nav>
+    <hr />
+    <h1>Basic Form Elements</h1>
+    <hr />
+    <p>Update this description.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="l-1up>">
+    <form id="myForm" action="#" method="post">
+
+      <div>
+        <label for="name">Text Input:</label>
+        <input type="text" name="name" id="name" value="" tabindex="1">
+      </div>
+
+      <div>
+        <h4>Radio Button Choice</h4>
+
+        <label for="radio-choice-1">Choice 1</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1">
+
+        <label for="radio-choice-2">Choice 2</label>
+        <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2">
+      </div>
+
+      <div>
+        <label for="select-choice">Select Dropdown Choice:</label>
+        <select name="select-choice" id="select-choice">
+          <option value="Choice 1">Choice 1</option>
+          <option value="Choice 2">Choice 2</option>
+          <option value="Choice 3">Choice 3</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="textarea">Textarea:</label>
+        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+      </div>
+
+      <div>
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" name="checkbox">
+      </div>
+
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+<footer class="container styleguide-footer">
+  <div class="l-1up">
+    <p>This is a style guide made with <a href="http://www.jekyllrb.com">Jekyll</a>.</p>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <!-- inject:js -->
+    <script src="/assets/min/script.min.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

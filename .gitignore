@@ -1,9 +1,0 @@
-Rakefile
-*.DS_Store
-*.sass-cache/
-_site/
-node_modules/
-npm-debug.log
-.idea/
-test-results
-assets/css/
