@@ -210,7 +210,10 @@ gulp.task('test', [config.speedtest_mode, 'sass-lint', 'js-test']);
 gulp.task('develop', ['inject-default', config.browsersync_mode, 'watch']);
 
 // Set Optimize task
-gulp.task('optimize', ['images', 'css', 'js-min', 'inject-min']);
+gulp.task('optimize', ['images', 'css', 'js-min'], function() {
+  // Don't run inject until files have been minified
+  gulp.start('inject-min');
+});
 
 gulp.task('deploy', function () {
   return gulp.src('_site/**/*')
