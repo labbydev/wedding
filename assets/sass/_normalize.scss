@@ -79,10 +79,6 @@ audio:not([controls]) {
 html {
   // Establish a vertical rhythm unit using $base-line-height.
   @include adjust-leading-to(2);
-  // Adjust font-size globally per breakpoint.
-  @include breakpoint($bp1) { font-size: ($base-font-size / 16px); } // 112%
-  @include breakpoint($bp2) { font-size: ($base-font-size / 16px); } // 124%
-  @include breakpoint($bp3) { font-size: ($base-font-size / 16px); } // 136%
   background: $background-color;
   color: $text-color;
   font-family: $base-font-family;
@@ -90,7 +86,12 @@ html {
   font-smoothing: antialiased;
   font-weight: 400;
   text-rendering: optimizeLegibility;
-  size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  // Adjust font-size globally per breakpoint.
+  @include breakpoint($bp1) { font-size: ($base-font-size / 16px); } // 112%
+  @include breakpoint($bp2) { font-size: ($base-font-size / 16px); } // 124%
+  @include breakpoint($bp3) { font-size: ($base-font-size / 16px); } // 136%
 }
 
 body {
@@ -579,7 +580,7 @@ input:not([type]) {
 // Chrome (as of v.32/34 on OS X) needs additional room for color to display.
 // May be able to remove this tweak as color inputs become more standardized across browsers.
 input[type="color"] {
-  padding: 0.2em 0.5em;
+  padding: .2em .5em;
 }
 
 // Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
@@ -616,7 +617,7 @@ textarea[disabled] {
 // since IE8 won't execute CSS that contains a CSS3 selector.
 input:not([type])[disabled] {
   background-color: $input-disabled-not-background;
-  color:$input-disabled-not-text;
+  color: $input-disabled-not-text;
   cursor: not-allowed;
 }
 
