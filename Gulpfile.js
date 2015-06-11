@@ -199,7 +199,7 @@ gulp.task('develop', ['inject-default', config.browsersync_mode, 'watch']);
 gulp.task('optimize', ['images', 'css', 'js-min', 'inject-min']);
 
 gulp.task('deploy', function () {
-  return gulp.src('_site')
+  return gulp.src('_site/**/*')
     .pipe(deploy())
 });
 
