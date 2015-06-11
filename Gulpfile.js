@@ -14,6 +14,7 @@ var jscs = require('gulp-jscs');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var inject = require('gulp-inject');
+var deploy = require('gulp-gh-pages');
 
 var bs_drupal = browserSync.create("proxy1");
 var bs_prototype = browserSync.create("proxy2");
@@ -196,6 +197,11 @@ gulp.task('develop', ['inject-default', config.browsersync_mode, 'watch']);
 
 // Set Optimize task
 gulp.task('optimize', ['images', 'css', 'js-min', 'inject-min']);
+
+gulp.task('deploy', function () {
+  return gulp.src('_site/**/*')
+    .pipe(deploy())
+});
 
 //  Set default task
 gulp.task('default', ['develop']);

@@ -7,3 +7,5 @@ npm-debug.log
 .idea/
 test-results
 assets/css/
+assets/min/
+.publish
