@@ -6,7 +6,7 @@ var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 var cp = require('child_process');
-var scsslint = require('gulp-scsslint');
+var scsslint = require('gulp-scss-lint');
 var cssmin = require('gulp-cssmin');
 var sitespeed = require('gulp-sitespeedio');
 var jshint = require('gulp-jshint');
@@ -14,7 +14,11 @@ var jscs = require('gulp-jscs');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var inject = require('gulp-inject');
+var stylish = require('gulp-jscs-stylish');
+var checkstyleFileReporter = require('jshint-checkstyle-file-reporter');
 var deploy = require('gulp-gh-pages');
+
+var noop = function () {};
 
 var bs_drupal = browserSync.create("proxy1");
 var bs_prototype = browserSync.create("proxy2");
@@ -44,17 +48,26 @@ gulp.task('sass-lint', function(){
   return gulp.src(['assets/sass/*.scss', 'assets/sass/**/*.scss'])
     .pipe(scsslint({
       'bundleExec': true,
-      'config': '.scss-lint.yml'
+      'config': '.scss-lint.yml',
+      'reporterOutputFormat': 'Checkstyle',
+      'filePipeOutput': 'scssReport.xml'
     }))
-    .pipe(scsslint.reporter());
+    .pipe(gulp.dest('test-results'))
 });
 
 // JS Test
+
+// define report filename
+process.env.JSHINT_CHECKSTYLE_FILE = 'test-results/jshint.xml';
+
 gulp.task('js-test', function(){
   return gulp.src(['assets/js/*.js'])
     .pipe(jshint())
+    .pipe(jscs())
+    .on('error', noop)
+    .pipe(stylish.combineWithHintResults())
     .pipe(jshint.reporter('default'))
-    .pipe(jscs());
+    .pipe(jshint.reporter(checkstyleFileReporter));
 });
 
 // Compile Sass
