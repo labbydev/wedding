@@ -79,7 +79,8 @@ gulp.task('prototype-only-sass', function() {
       css: 'assets/css/',
       sass: 'assets/sass/',
       time: true,
-      bundle_exec: true
+      bundle_exec: true,
+      sourcemap: true
     }))
     .pipe(prefix("last 2 versions", "> 1%"))
     .pipe(gulp.dest('assets/css/'))
