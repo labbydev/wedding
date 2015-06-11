@@ -126,15 +126,15 @@ $taupegrey: #8D888D;
 
 // Use above sass variables to define defaults in normalize.scss
 /* body */
-$text-color: $gray-dark;
+$text-color: $taupegrey;
 $background-color: $white;
 /* Link (a:) */
-$link-color: $gray-medium;
-$link-hover: $gray-light;
+$link-color: $amethystsmoke;
+$link-hover: $fedora;
 /* Blockquote*/
-$blockquote-color:$gray-medium;
+$blockquote-color: $affair;
 /* Figcaption */
-$figcaption-color: $gray-medium;
+$figcaption-color: $hotpurple;
 /* forms */
 $form-text:$gray-medium;
 $input-border-color: $gray-light;
@@ -160,9 +160,9 @@ $select-border: $gray-light;
 $select-border-hover: $gray-medium;
 $placeholder-text: $gray-light;
 /* Buttons */
-$button-background: $gray-medium;
+$button-background: $amethystsmoke;
 $button-text: $white;
-$button-hover-background: $gray-dark;
+$button-hover-background: $fedora;
 $button-hover-text: $white;
 $button-focus-outline: $gray-dark;
 $button-reset-text: $gray-medium;

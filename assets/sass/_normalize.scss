@@ -176,9 +176,11 @@ pre, {
   margin: 0 0 rhythm(1.25) 0;
 }
 blockquote {
+  @extend %display-type;
   /* Also indent the quote on both sides. */
   margin: $indent-amount;
   color: $blockquote-color;
+  font-weight: $normal;
 }
 
 /**
@@ -192,29 +194,35 @@ h1 {
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   @include leader(3, $h1-font-size);
   @include trailer(0.75, $h1-font-size);
+  color: $fedora;
 }
 h2 {
   @extend %display-type;
   @include adjust-font-size-to( $h2-font-size, 3);
   @include leader(3, $h2-font-size);
   @include trailer(0.75, $h2-font-size);
+  color: $fedora;
 }
 h3 {
   @extend %display-type;
   @include adjust-font-size-to( $h3-font-size, 2.75);
   @include leader(3, $h3-font-size);
   @include trailer(0.75, $h3-font-size);
+  color: $fedora;
 }
 h4 {
+  @extend %allcaps;
   @include adjust-font-size-to( $h4-font-size, 2);
   @include leader(3, $h4-font-size);
   @include trailer(0.75, $h4-font-size);
+  color: $fedora;
 }
 h5 {
   @extend %allcaps;
   @include adjust-font-size-to( $h5-font-size, 1.75);
   @include leader(3, $h5-font-size);
   @include trailer(0.5, $h5-font-size);
+  color: $fedora;
 }
 h6 {
   @extend %allcaps;
@@ -222,6 +230,7 @@ h6 {
   @include adjust-font-size-to( $h6-font-size, 1.75);
   @include leader(2, $h6-font-size);
   @include trailer(0.5, $h6-font-size);
+  color: $fedora;
 }
 
 
@@ -233,7 +242,7 @@ abbr[title] {
 /* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
 b,
 strong {
-  font-weight: 700;
+  font-weight: $bold;
 }
 
 /* Address styling not present in Safari 5 and Chrome. */
@@ -245,7 +254,7 @@ dfn {
 hr {
   @include box-sizing(content-box);
   height: 0;
-  border: 1px solid #ddd;
+  border: 1px solid $frenchgrey;
   padding-bottom: -1px;
   margin: rhythm(2) 0;
 }
@@ -450,6 +459,17 @@ legend {
  * 4. Improve appearance and consistency with IE 6/7.
  * 5. Keep form elements constrained in their containers.
  */
+%button {
+  background: $button-background;
+  border: none;
+  color: $button-text;
+  &:focus,
+  &:hover{
+    background: $button-hover-background;
+    color: $button-hover-text;
+  }
+}
+
 button,
 input,
 select,
@@ -498,6 +518,7 @@ button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
+  @extend %button;
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
   @if $legacy-support-for-ie7 {
