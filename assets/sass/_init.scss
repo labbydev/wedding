@@ -88,14 +88,22 @@ $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$script:          'Petit Formal Script', cursive;
+$raleway:         'Raleway', sans-serif;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $helvetica; // The font family set on the html element.
+$base-font-family: $raleway; // The font family set on the html element.
 $font-monospace:   $courier;
+
+// Font size variables
+$normal: 400;
+$light: 200;
+$semibold: 600;
+$bold: 800;
 
 // Sass color variables, etc.
 $black: #222222;
@@ -106,6 +114,15 @@ $off-white: #fbfbfb;
 $white: #ffffff;
 $white-60: rgba($white, .60);
 $white-30: rgba($white, .30);
+
+// Brand Colors
+$fedora: #645168;
+$hotpurple: #462A4D;
+$affair: #7B578A;
+$amethystsmoke: #9F8AA9;
+$frenchgrey: #C2BDC5;
+$topaz: #8D8890;
+$taupegrey: #8D888D;
 
 // Use above sass variables to define defaults in normalize.scss
 /* body */

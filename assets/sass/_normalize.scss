@@ -268,6 +268,7 @@ var {
     _font-family: 'courier new', monospace;
   }
   @include adjust-font-size-to( $base-font-size );
+  font-weight: bold;
 }
 
 /* Improve readability of pre-formatted text in all browsers. */
