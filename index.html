@@ -1,44 +1,44 @@
 ---
-layout: styleguide
+layout: default
 title: Home
 ---
-<div class="container">
-  <div class="l-1up styleguide-body">
-    <h1>Styleguide</h1>
 
-    <section>
-      <hr />
-      <h2>Elements</h2>
-      <p>Elements are the foundation of the system. Simply using typography and color, well designed Elements can begin to express the site's personality.</p>
-      <ul class="posts">
-        {% for post in site.categories.elements reversed %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </section>
-
-
-    <section>
-      <hr />
-      <h2>Components</h2>
-      <p>Elements are combined and sometimes modified to create components. Components are designed to serve specific functional roles within the system.</p>
-      <ul class="posts">
-        {% for post in site.categories.components reversed %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </section>
-
-
-    <section>
-      <hr />
-      <h2>Templates</h2>
-      <p>Based on the needs of the content, Components are arranged into specific layouts to create Templates.<p>
-      <ul class="posts">
-        {% for post in site.categories.templates reversed %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </section>
+<header class="site__header">
+  <div class="primary-navigation">
+    <nav class="menu--main">
+      <a class="menu--main__link" href="#">Home</a>
+      <a class="menu--main__link" href="#">Venue</a>
+      <a class="menu--main__link" href="#">Lodging</a>
+      <a class="menu--main__link" href="#">Bridal Party</a>
+      <a class="menu--main__link" href="#">Registry</a>
+      <a class="menu--main__link" href="#">Our Story</a>
+    </nav>
   </div>
-</div>
+</header>
+<section class="page__hero">
+  <div class="l-1up">
+    <h1 class="page__title">{{ site.name }}</h1>
+    <span class="hero__heading">Oct 8, 2016</span>
+  </div>
+</section>
+<section class="proposal callout-band">
+  <div class="l-1up">
+    <h2 class="section__heading">The Proposal</h2>
+    <p>Cum hendrerit gravida pellentesque sociis hymenaeos magnis etiam tortor netus senectus. At quisque. Primis ornare erat, fames eros praesent maecenas semper vehicula ante posuere elementum.Curae; vehicula enim pharetra in cubilia. Sed sapien Eros magnis fermentum mus egestas natoque. Feugiat. Pellentesque gravida conubia etiam id elit tempor semper. Nisi tellus ridiculus aptent erat nibh erat, leo platea.Quam. Nam odio Aliquet lacus hendrerit imperdiet habitasse malesuada. Euismod vitae maecenas, rutrum, litora ipsum. Bibendum praesent proin ligula quisque faucibus gravida et erat pharetra augue. Nostra tempor eget vitae adipiscing eros mollis, fermentum eleifend ante est laoreet mattis est. Consequat Ultrices neque.</p>
+  </div>
+</section>
+<section class="when callout-band">
+  <h2 class="section__heading">When</h2>
+  <p>Saturday, October 8, 2016</p>
+  <h3>Times</h3>
+  <p><strong>Ceremony:</strong> 4:30 pm.</p>
+  <p><strong>Reception:</strong> 6:00 pm.</p>
+</section>
+<section class="where callout-band">
+  <h2 class="section__heading">Where</h2>
+  <p>The Grove Redfield Estate</p>
+  <p>1421 Milwaukee Ave Glenview, IL 60025</p>
+</section>
+<footer class="site__footer">
+  Copyright Lauren A. Byrwa
+</footer>
