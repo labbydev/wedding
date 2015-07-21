@@ -1,0 +1,32 @@
+// @file
+// Page Hero Component
+//
+
+.page__hero {
+  background: url('../imgs/shane_lauren20151231.jpg');
+  background-position: 50%;
+  background-size: cover;
+  overflow: hidden;
+  padding: rhythm(3) 0 rhythm(15);
+  text-align: center;
+
+  @include breakpoint($lg) {
+    height: 87vh;
+    padding: 0;
+  }
+}
+
+.hero__overlay {
+  background: rgba($gray-light, .5);
+  padding: rhythm(1) 0;
+
+  @include breakpoint($lg) {
+    @include leader(10);
+  }
+}
+
+.hero__heading {
+  color: $hotpurple;
+  font-size: $sm-heading;
+  font-weight: $semibold;
+}

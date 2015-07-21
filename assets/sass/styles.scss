@@ -21,6 +21,9 @@
 // Component (SMACSS module) rules
 @import 'components/section';
 @import 'components/home';
+@import 'components/hero';
+@import 'components/header';
+@import 'components/navigation';
 
 // Unique rules for styleguide aspect--not related to site styles
 @import 'styleguide/styleguide';
