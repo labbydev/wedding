@@ -17,8 +17,7 @@
 }
 
 .hero__overlay {
-  background: rgba($gray-light, .5);
-  padding: rhythm(1) 0;
+  @extend %overlay--white;
 
   @include breakpoint($lg) {
     @include leader(10);
