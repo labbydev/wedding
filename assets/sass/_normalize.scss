@@ -152,7 +152,7 @@ h1 {
   @include adjust-font-size-to($h1-font-size, 3.25);
   @include leader(3, $h1-font-size);
   @include trailer(.75, $h1-font-size);
-  color: $fedora;
+  color: $hotpurple;
 }
 
 h2 {

@@ -1,0 +1,18 @@
+// @file
+// Navigation Component
+//
+
+.primary-navigation {
+  text-align: center;
+}
+
+.menu--main {
+  @include leader(3);
+  @include trailer(3);
+}
+
+.menu--main__link {
+  @extend h4;
+  font-weight: $semibold;
+  margin: 0 rhythm(.5);
+}

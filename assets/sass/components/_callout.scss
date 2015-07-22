@@ -1,0 +1,9 @@
+// @file
+// Callout components
+//
+
+.callout-band {
+  @extend %clearfix;
+  padding: rhythm(2);
+  text-align: center;
+}

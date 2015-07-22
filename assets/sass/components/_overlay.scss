@@ -1,0 +1,20 @@
+// @file
+// Overlay components
+//
+
+%overlay,
+.overlay {
+  padding: rhythm(1) 0;
+}
+
+%overlay--white,
+.overlay--white {
+  @extend %overlay;
+  background: rgba($gray-light, .5);
+}
+
+.overlay--gray {
+  @extend %overlay;
+  background: rgba($taupegrey, .5);
+  color: $white;
+}
