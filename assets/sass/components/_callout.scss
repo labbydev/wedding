@@ -5,5 +5,11 @@
 .callout-band {
   @extend %clearfix;
   padding: rhythm(2);
+}
+
+.lede {
+  font-size: $h3-font-size;
+  font-weight: $semibold;
+  line-height: rhythm(2);
   text-align: center;
 }

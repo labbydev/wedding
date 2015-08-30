@@ -153,6 +153,7 @@ h1 {
   @include leader(3, $h1-font-size);
   @include trailer(.75, $h1-font-size);
   color: $hotpurple;
+  text-align: center;
 }
 
 h2 {
@@ -161,6 +162,7 @@ h2 {
   @include leader(3, $h2-font-size);
   @include trailer(.75, $h2-font-size);
   color: $fedora;
+  text-align: center;
 }
 
 h3 {
@@ -169,6 +171,7 @@ h3 {
   @include leader(3, $h3-font-size);
   @include trailer(.75, $h3-font-size);
   color: $fedora;
+  text-align: center;
 }
 
 h4 {
@@ -177,6 +180,7 @@ h4 {
   @include leader(3, $h4-font-size);
   @include trailer(.75, $h4-font-size);
   color: $fedora;
+  text-align: center;
 }
 
 h5 {
@@ -185,6 +189,7 @@ h5 {
   @include leader(3, $h5-font-size);
   @include trailer(.5, $h5-font-size);
   color: $fedora;
+  text-align: center;
 }
 
 h6 {
@@ -194,6 +199,7 @@ h6 {
   @include trailer(.5, $h6-font-size);
   color: $fedora;
   font-weight: 400;
+  text-align: center;
 }
 
 // Address styling not present in IE 8/9, Safari 5, and Chrome.
