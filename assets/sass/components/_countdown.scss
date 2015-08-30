@@ -1,0 +1,21 @@
+// @file
+// Countdown component
+//
+
+.countdown {
+  color: $hotpurple;
+  font-size: 2em;
+  line-height: 1.5em;
+
+  span {
+    display: block;
+  }
+
+  @include breakpoint($md) {
+    font-size: 3em;
+
+    span {
+      display: inline-block;
+    }
+  }
+}
