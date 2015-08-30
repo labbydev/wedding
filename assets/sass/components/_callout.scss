@@ -18,3 +18,15 @@
 .center {
   text-align: center;
 }
+
+%callout-band--photo,
+.callout-band--photo {
+  padding: rhythm(20) 0 rhythm(10);
+}
+
+.callout-band--redfield {
+  @extend %callout-band--photo;
+  background: url('../imgs/GroveRedfieldEstate3.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
