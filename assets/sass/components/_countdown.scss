@@ -4,19 +4,20 @@
 
 .countdown {
   color: $hotpurple;
-  font-size: 2em;
   font-weight: $semibold;
-  line-height: 1.5em;
+  text-transform: uppercase;
+}
 
-  span {
-    display: block;
-  }
+.countdown__period {
+  display: block;
 
   @include breakpoint($md) {
-    font-size: 3em;
-
-    span {
-      display: inline-block;
-    }
+    display: inline-block;
+    margin: 0 2.5em;
   }
+}
+
+.countdown__period-time {
+  font-size: 5em;
+  line-height: 1.25em;
 }

@@ -31,7 +31,6 @@ setInterval(function () {
   seconds = parseInt(seconds_left % 60);
 
   // format countdown string + set tag value
-  countdown.innerHTML = '<p class="center"><span class="countdown__days">' + days +  ' Days</span> <span class="countdown__hours">' + hours + ' Hours</span> <span class="countdown__minutes">'
-    + minutes + ' Minutes</span> <span class="countdown__seconds">' + seconds + ' Seconds</span></p>';
+  countdown.innerHTML = '<div class="center"><div class="countdown__period"><div class="countdown__period-time">' + days + '</div><div class="countdown__period-label"> Days</div></div><div class="countdown__period"><div class="countdown__period-time">' + hours + '</div><div class="countdown__period-label"> Hours</div></div><div class="countdown__period"><div class="countdown__period-time">' + minutes + '</div><div class="countdown__period-label"> Minutes</div></div><div class="countdown__period"><div class="countdown__period-time">' + seconds + '</div><div class="countdown__period-label"> Seconds</div></div></div>';
 
 }, 1000);
