@@ -20,7 +20,7 @@ $styleguide-slug: 2em;
 
 .styleguide-body {
   margin-bottom: $styleguide-slug;
-  h1,h2,h3,h4,h5,h6,p,ul,ol { max-width: 760px; }
+  max-width: 760px;
 }
 
 .styleguide-footer {
@@ -63,5 +63,6 @@ $styleguide-slug: 2em;
 .component-header {
   background: $frenchgrey;
   color: $fedora;
+  margin: rhythm(4) 0;
   padding: rhythm(2);
 }
