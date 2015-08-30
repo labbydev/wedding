@@ -49,7 +49,7 @@
 
 .profile__button {
   @extend %button;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   position: absolute;
   transition: all .25s ease-in-out;
   opacity: 0;
