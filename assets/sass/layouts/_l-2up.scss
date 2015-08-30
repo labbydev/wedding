@@ -15,19 +15,19 @@
   @include zen-grid-flow-item(12, 12, $omega-gutter: false);
   float: left;
 
-  @include breakpoint($bp2) {
+  @include breakpoint($md) {
     @include zen-grid-flow-item(6, 12, $omega-gutter: true);
   }
 }
 // make every 2nd list item wrap
 .l-2up:nth-of-type(2n) {
-  @include breakpoint($bp2) {
+  @include breakpoint($md) {
     @include zen-grid-flow-item(6, 12, $omega-gutter: false);
   }
 }
 // clears a new row from the tallest element in the row above
 .l-2up:nth-of-type(2n+1) {
-  @include breakpoint($bp2) {
+  @include breakpoint($md) {
     @include zen-clear();
   }
 }
