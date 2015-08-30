@@ -10,17 +10,22 @@
   padding: rhythm(3) 0 rhythm(15);
   text-align: center;
 
-  @include breakpoint($lg) {
-    height: 87vh;
+  @include breakpoint($md) {
+    height: 100vh;
     padding: 0;
   }
 }
 
 .hero__overlay {
   @extend %overlay--white;
+  @include leader(1);
+
+  @include breakpoint($md) {
+    @include leader(10);
+  }
 
   @include breakpoint($lg) {
-    @include leader(10);
+    @include leader(14);
   }
 }
 
