@@ -17,4 +17,8 @@
   @extend %overlay;
   background: rgba($taupegrey, .5);
   color: $white;
+
+  a {
+    color: $affair;
+  }
 }
