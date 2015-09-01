@@ -4,23 +4,12 @@
 
 .callout-band {
   @extend %clearfix;
-  padding: rhythm(2);
-}
-
-.lede {
-  font-size: $h3-font-size;
-  font-weight: $semibold;
-  line-height: rhythm(2);
-  text-align: center;
-}
-
-%center,
-.center {
-  text-align: center;
+  padding: rhythm(5) 0 rhythm(7);
 }
 
 %callout-band--photo,
 .callout-band--photo {
+  @extend %clearfix;
   padding: rhythm(20) 0 rhythm(10);
 }
 

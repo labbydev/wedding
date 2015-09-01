@@ -4,6 +4,7 @@
 
 %overlay,
 .overlay {
+  @extend %clearfix;
   padding: rhythm(1) 0;
 }
 

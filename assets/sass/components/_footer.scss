@@ -1,0 +1,13 @@
+//
+// @file
+// Footer Component
+//
+
+.site__footer {
+  @extend %callout-band--photo;
+  background: url('../imgs/Memorial_Day_Weekend-9.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 0;
+  padding-top: rhythm(40);
+}
