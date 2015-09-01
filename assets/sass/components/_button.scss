@@ -1,0 +1,22 @@
+// @file
+// Button components
+//
+
+%button,
+.button {
+  @include trans(.3s, ease);
+  background: $off-white;
+  border: 3px solid $link-color;
+  padding: rhythm(1) rhythm(2);
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: $bold;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $link-hover;
+    text-decoration: none;
+  }
+}

@@ -1,27 +1,29 @@
-<!--wraps every page and renders jekyll content in the middle. Includes header and footer includes -->
+<!--wraps every page and renders jekyll content in the middle. -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ site.name }} : {{ page.title }}</title>
-    <meta name="viewport" content="width=device-width">
-    <!-- inject:css -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <!-- endinject -->
-    <!-- Google Web Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Raleway:600,800,400,200' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ site.name }} : {{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <!-- endinject -->
+  <!-- Google Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script|Raleway:600,800,400,200' rel='stylesheet' type='text/css'>
 
-  </head>
+</head>
 
-  <body id="{{ page.id-name }}">
+<body id="{{ page.id-name }}">
+{% include site-header.html %}
+<div class="content-wrapper">
+  {{ content }}
+</div>
+{% include site-footer.html %}
 
-    <div class="content-wrapper">
-      {% include site-header.html %}
-      {{ content }}
-      {% include site-footer.html %}
-    </div>
-    <!-- inject:js -->
-    <script src="/assets/js/script.js"></script>
-    <!-- endinject -->
-  </body>
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<!-- inject:js -->
+<script src="/assets/js/script.js"></script>
+<!-- endinject -->
+</body>
+</html>

@@ -19,8 +19,19 @@
 @import 'layouts/l-6up';
 
 // Component (SMACSS module) rules
+@import 'components/overlay';
 @import 'components/section';
 @import 'components/home';
+@import 'components/hero';
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/callout';
+@import 'components/button';
+@import 'components/profile';
+@import 'components/countdown';
+@import 'components/toggle';
+@import 'components/teaser';
+@import 'components/footer';
 
 // Unique rules for styleguide aspect--not related to site styles
 @import 'styleguide/styleguide';

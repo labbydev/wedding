@@ -1,0 +1,22 @@
+// @file
+// Callout components
+//
+
+.callout-band {
+  @extend %clearfix;
+  padding: rhythm(5) 0 rhythm(7);
+}
+
+%callout-band--photo,
+.callout-band--photo {
+  @extend %clearfix;
+  padding: rhythm(20) 0 rhythm(10);
+}
+
+.callout-band--redfield {
+  @extend %callout-band--photo;
+  background: url('../imgs/GroveRedfieldEstate3.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
