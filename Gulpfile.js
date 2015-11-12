@@ -198,7 +198,7 @@ gulp.task('prototype-drupal-sitespeed', sitespeed({
 gulp.task('watch', function() {
   gulp.watch('assets/sass' + '/**/*.scss', [config.compile_mode]);
   gulp.watch('assets/imgs' + '/**/*', function() {
-    runSequence(['images'], ['jekyll-rebuild'])
+    run-sequence(['images'], ['jekyll-rebuild'])
   });
   gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*.html'], ['jekyll-rebuild']);
 });
