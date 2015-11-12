@@ -134,13 +134,41 @@ a:hover {
 p,
 pre, {
   margin: 0 0 rhythm(1.25);
+
+  &:last-child {
+    margin-bottom: 4em;
+  }
+
+  &:first-child {
+    margin-bottom: 1em;
+  }
 }
 
 blockquote {
   @extend %display-type;
   color: $blockquote-color;
+  display: inline-block;
   font-weight: $normal;
-  margin: $indent-amount;
+  position: relative;
+
+  &:before, &:after {
+    font-size: 5em;
+    color: $frenchgrey;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+  }
+
+  &:before {
+    content: '“';
+    top: 15px;
+    left: -25px;
+  }
+
+  &:after {
+    content: '”';
+    bottom: -15px;
+  }
 }
 
 //

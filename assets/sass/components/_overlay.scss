@@ -23,3 +23,13 @@
     color: $affair;
   }
 }
+
+.overlay--purple {
+  @extend %overlay;
+  background: rgba($fedora, .5);
+  color: $white;
+
+  a {
+    color: $affair;
+  }
+}
