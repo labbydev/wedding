@@ -3,42 +3,136 @@
 //
 
 .page__hero {
-  background: url('../imgs/DSC_1759.jpg');
-  background-position: 50%;
-  background-size: cover;
-  background-attachment: fixed;
+  display: block;
+  height: 100%;
   overflow: hidden;
-  padding: rhythm(3) 0 rhythm(15);
   text-align: center;
+  margin: 0 auto;
+  min-height: 560px;
+  width: 100%;
+}
 
-  @include breakpoint($md) {
-    height: 100vh;
-    padding: 0;
+.hero__image {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
   }
-  
-  .page__story & {
-    background: url('../imgs/WindyCityWineFest-3.jpg');
-    background-position: 50%;
-    background-size: cover;
-    background-attachment: fixed;
+
+  &:after {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background: -webkit-linear-gradient(top, rgba($white, 0) 0%, rgba($white, 1) 100%);
+    background: linear-gradient(to bottom, rgba($white, 0) 0%, rgba($white, 1) 100%);
+    .modify & {
+      opacity: 1;
+    }
+  }
+
+  .modify & {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
   }
 }
 
-.hero__overlay {
-  @extend %overlay--white;
-  @include leader(1);
+//.hero__overlay {
+//  @extend %overlay--white;
+//  @include leader(1);
+//
+//  @include breakpoint($md) {
+//    @include leader(10);
+//  }
+//
+//  @include breakpoint($lg) {
+//    @include leader(14);
+//  }
+//}
 
-  @include breakpoint($md) {
-    @include leader(10);
+.hero__title {
+  text-align: left;
+  max-width: 900px;
+  z-index: 1000;
+  margin: 0 auto;
+  padding: 0 1.25em;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: $taupegrey;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+
+  .modify & {
+    color: $hotpurple;
   }
+}
 
-  @include breakpoint($lg) {
-    @include leader(14);
+.page__title {
+  color: $taupegrey;
+  -webkit-transition-property: color;
+  transition-property: color;
+
+  .modify & {
+    color: $hotpurple;
   }
 }
 
 .hero__heading {
-  color: $hotpurple;
   font-size: $sm-heading;
   font-weight: $semibold;
+  -webkit-transform: translateX(-150px);
+  transform: translateX(-150px);
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+  opacity: 0;
+
+  .modify & {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.content-wrapper{
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+  opacity: 0;
+  -webkit-transform: translateY(350px);
+  transform: translateY(350px);
+
+  .modify & {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }

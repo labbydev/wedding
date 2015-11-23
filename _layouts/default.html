@@ -15,14 +15,26 @@
   </head>
 
   <body id="{{ page.id-name }}">
-
-    <div class="content-wrapper">
-      {{ content }}
+    <div id="main">
+      {% include site-header.html %}
+      <section class="page__hero">
+        <div class="hero__image"><img src="{{ page.image }}" alt="{{ page.title }}" /></div>
+        <div class="hero__title">
+          <h1 class="page__title">{{ page.title }}</h1>
+          <p class="hero__heading">{{ page.subtitle }}</p>
+        </div>
+      </section>
+      <div class="content-wrapper">
+        {{ content }}
+      </div>
+      {% include site-footer.html %}
     </div>
 
-    <script src="//code.jquery.com/jquery-latest.js"></script>
-    <!-- inject:js -->
-    <script src="/assets/js/script.js"></script>
-    <!-- endinject -->
+  <script src="//code.jquery.com/jquery-latest.js"></script>
+  <!-- inject:js -->
+  <script src="/assets/js/classie.js"></script>
+  <script src="/assets/js/intro.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <!-- endinject -->
   </body>
 </html>
