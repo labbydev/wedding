@@ -9,3 +9,8 @@ gem 'sass', '>= 3.4.6'
 gem 'jekyll', '>= 2.4.0'
 gem 'scss_lint', '0.38.0'
 gem 'scss_lint_reporter_checkstyle', '0.1.0'
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+gem 'github-pages', versions['github-pages']
