@@ -1,0 +1,23 @@
+// @file
+// Countdown component
+//
+
+.countdown {
+  color: $hotpurple;
+  font-weight: $semibold;
+  text-transform: uppercase;
+}
+
+.countdown__period {
+  display: block;
+
+  @include breakpoint($md) {
+    display: inline-block;
+    margin: 0 2.5em;
+  }
+}
+
+.countdown__period-time {
+  font-size: 5em;
+  line-height: 1.25em;
+}

@@ -1,0 +1,29 @@
+// @file
+// Home Page Specific
+//
+
+.lede {
+  font-size: $h3-font-size;
+  font-weight: $semibold;
+  line-height: rhythm(2);
+  text-align: center;
+}
+
+%center,
+.center {
+  text-align: center;
+}
+
+%left,
+.left {
+  float: left;
+  text-align: left;
+  margin-left: 1em;
+}
+
+%right,
+.right {
+  float: right;
+  text-align: right;
+  margin-right: 1em;
+}

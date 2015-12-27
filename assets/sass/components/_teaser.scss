@@ -1,0 +1,59 @@
+// @file
+// Teaser component styles
+//
+
+%teaser__photo,
+.teaser__photo {
+  position: relative;
+  overflow: hidden;
+  transition: all .25s ease-in-out;
+
+  img {
+    transition: all .25s ease-in-out;
+    opacity: 1;
+    filter: grayscale(0);
+  }
+
+  &:hover,
+  &:focus {
+    background: $fedora;
+
+    img {
+      transform: scale(1.15);
+      opacity: .35;
+      filter: grayscale(100%);
+    }
+
+    .teaser__title {
+      opacity: 0;
+    }
+
+    .teaser__button {
+      opacity: 1;
+    }
+  }
+}
+
+.teaser__photo--no-bkg {
+  @extend %teaser__photo;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.teaser__button {
+  @extend %button;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  transition: all .25s ease-in-out;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 25px;
+  width: 150px;
+  text-align: center;
+}

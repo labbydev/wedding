@@ -1,0 +1,46 @@
+// @file
+// Navigation Component
+//
+
+.primary-navigation {
+  display: none;
+
+  .is-open & {
+    display: block;
+  }
+
+  @include breakpoint($lg) {
+    display: block;
+    text-align: center;
+
+    .is-fixed & {
+      text-align: right;
+    }
+  }
+}
+
+.menu--main__link {
+  @extend h4;
+  display: block;
+  font-weight: $semibold;
+  margin: 0 rhythm(.5);
+  padding: rhythm(.5) 0;
+
+  &:first-child {
+    padding-top: rhythm(1.5);
+  }
+
+  &:last-child {
+    padding-bottom: rhythm(1.5);
+  }
+
+  @include breakpoint($lg) {
+    display: inline-block;
+    padding: 0;
+
+    &:first-child,
+    &:last-child {
+      padding: 0;
+    }
+  }
+}
