@@ -56,22 +56,41 @@
 }
 
 .hero__title {
-  max-width: 900px;
   z-index: 1000;
   margin: 0 auto;
   text-align: center;
   position: absolute;
   top: 65%;
   left: 80%;
+  width: 25%;
+
+  .modify & {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+.hero__title--right {
+  left: 75%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  color: $taupegrey;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 
   .modify & {
     left: 50%;
-    color: $hotpurple;
+  }
+}
+
+.hero__title--left {
+  left: 25%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+
+  .modify & {
+    left: 50%;
   }
 }
 
@@ -81,7 +100,7 @@
   transition-property: color;
 
   .modify & {
-    color: $affair;
+    color: $hotpurple;
   }
 }
 
