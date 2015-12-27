@@ -2,6 +2,7 @@
 // Teaser component styles
 //
 
+%teaser__photo,
 .teaser__photo {
   position: relative;
   overflow: hidden;
@@ -30,6 +31,14 @@
     .teaser__button {
       opacity: 1;
     }
+  }
+}
+
+.teaser__photo--no-bkg {
+  @extend %teaser__photo;
+
+  &:hover {
+    background: none;
   }
 }
 

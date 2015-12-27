@@ -41,6 +41,32 @@
   }
 }
 
+.has-caption {
+  img {
+    transition: all .25s ease-in-out;
+    opacity: 1;
+    filter: grayscale(0);
+  }
+
+  &:hover,
+  &:focus {
+
+    img {
+      transform: translateY(-90px);
+      opacity: .35;
+      filter: grayscale(100%);
+    }
+
+    .profile__title {
+      opacity: 0;
+    }
+
+    .profile__button {
+      opacity: 1;
+    }
+  }
+}
+
 .profile__title {
   @extend %overlay--white;
   position: absolute;
