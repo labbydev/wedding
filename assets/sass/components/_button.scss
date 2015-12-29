@@ -6,7 +6,6 @@
 .button {
   @include trans(.3s, ease);
   background: $off-white;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   border: 3px solid $link-color;
   padding: rhythm(1) rhythm(2);
   display: inline-block;
