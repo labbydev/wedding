@@ -1,0 +1,54 @@
+---
+layout: default
+title: Reply if you Please
+title-side: left
+image: assets/imgs/picjumbo.com_IMG_4731.jpg
+---
+
+<div class="page__content page__story">
+  <section id="main-content" class="container">
+    <div class="l-1up">
+      <h2>RSVP Online</h2>
+      <p class="lede">We can't wait to celebrate with you, let us if know if you're coming.</p>
+      <form action="//formspree.io/byrwa.burroughswedding@gmail.com"
+          method="POST">
+        <div class="l-2up--1">
+          <label for="name">Your Name:</label>
+          <input id="name" type="text" name="name">
+        </div>
+        <div class="l-2up--2">
+          <label for="email">Email Address:</label>
+          <input type="email" name="_replyto" type="email" id="email">
+          <input type="hidden" name="_subject" value="New RSVP!" />
+        </div>
+        <div class="l-2up--1">
+          <label for="guest">Name of Guest(s):</label>
+          <input id="guest" type="text" name="guest">
+        </div>
+        <div class="l-2up--2">
+          <label for="number">Number of Attendees:</label>
+          <input id="number" type="number" name="number">
+        </div>
+        <div class="l-2up--1">
+          <label for="yes">
+            <input type="radio" name="rsvp" value="yes" id="yes">
+            Wouldn't miss it for the world
+          </label>
+          <label for="no">
+            <input type="radio" name="rsvp" value="no" id="no">
+            Will be there in spirit
+          </label>
+        </div>
+        <div class="l-2up--2">
+          <label for="song">We'll definitely dance if you play...</label>
+          <input type="text" id="song" name="song">
+          <input type="hidden" name="_next" value="/thanks.html" />
+          <input type="text" name="_gotcha" style="display:none" />
+        </div>
+        <div class="l-1up" style="text-align: center">
+          <input type="submit" value="RSVP">
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

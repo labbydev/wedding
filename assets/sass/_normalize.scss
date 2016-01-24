@@ -390,6 +390,10 @@ figure {
 //
 // Forms
 //
+form {
+  @extend %clearfix;
+  padding: rhythm(5) 0 rhythm(7);
+}
 
 // Define consistent border, margin, and padding.
 fieldset {
@@ -409,6 +413,12 @@ fieldset {
 legend {
   border: 0;
   padding: 0;
+}
+
+label{
+  font-weight: $bold;
+  display: block;
+  margin: .5em 0;
 }
 
 //
@@ -477,6 +487,7 @@ input[type="submit"] {
   @extend %button;
   -webkit-appearance: button;
   cursor: pointer;
+  color: $amethystsmoke;
 }
 
 //
@@ -588,6 +599,7 @@ input[type="tel"],
 input[type="color"],
 select {
   height: 2.5em;
+  margin-bottom: 1.5em;
 }
 
 // Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
@@ -688,7 +700,7 @@ input[type="radio"] {
   float: left;
   margin-right: .5em;
   position: relative;
-  top: 7px;
+  top: 4px;
 }
 
 select {
