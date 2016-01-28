@@ -17,6 +17,9 @@
 @import 'layouts/l-3up';
 @import 'layouts/l-4up';
 @import 'layouts/l-6up';
+@import 'layouts/l-66';
+@import 'layouts/l-25-75';
+@import 'layouts/l-75-25';
 
 // Component (SMACSS module) rules
 @import 'components/overlay';
@@ -33,6 +36,7 @@
 @import 'components/teaser';
 @import 'components/footer';
 @import 'components/drop-cap';
+@import 'components/inline-image';
 
 // Unique rules for styleguide aspect--not related to site styles
 @import 'styleguide/styleguide';
