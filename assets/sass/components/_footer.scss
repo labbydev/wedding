@@ -10,5 +10,11 @@
   background-position: top left;
   background-attachment: fixed;
   padding: 0;
-  padding-top: rhythm(10);
+  padding-top: rhythm(20);
+
+  @include breakpoint($bp2) {
+    .modify & {
+      margin-top: -150px;
+    }
+  }
 }
