@@ -70,6 +70,3 @@ DEPENDENCIES
   scss_lint (= 0.38.0)
   scss_lint_reporter_checkstyle (= 0.1.0)
   zen-grids (>= 1.4.0)
-
-BUNDLED WITH
-   1.10.6
