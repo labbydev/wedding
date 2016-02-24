@@ -14,7 +14,7 @@ image: assets/imgs/photo-1449973405711-881157523e5a.jpeg
           method="POST">
         <div class="l-2up--1">
           <label for="name">Your Name:</label>
-          <input id="name" type="text" name="name">
+          <input id="name" type="text" name="name" onclick="ga('send', 'event', 'RSVP', 'start');">
         </div>
         <div class="l-2up--2">
           <label for="email">Email Address:</label>
@@ -46,7 +46,7 @@ image: assets/imgs/photo-1449973405711-881157523e5a.jpeg
           <input type="text" name="_gotcha" style="display:none" />
         </div>
         <div class="l-1up" style="text-align: center">
-          <input type="submit" value="RSVP">
+          <input type="submit" value="RSVP" onclick="ga('send', 'event', 'RSVP', 'submit');">
         </div>
       </form>
     </div>
