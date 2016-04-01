@@ -2,6 +2,10 @@
 // Page Hero Component
 //
 
+#main {
+  overflow-y: hidden;
+}
+
 .page__hero {
   display: block;
   text-align: center;
