@@ -1,0 +1,18 @@
+// @file
+// Schedule component styles
+//
+
+.schedule {
+  @extend .lede;
+  list-style: none;
+}
+
+.schedule__item {
+  line-height: 2em;
+  overflow: hidden;
+}
+
+.schedule__time {
+  @extend .drop-cap;
+  float: left;
+}

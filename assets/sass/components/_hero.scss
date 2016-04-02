@@ -119,6 +119,8 @@
 }
 
 .content-wrapper{
+  padding-bottom: 2em;
+
   @include breakpoint($bp1) {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
