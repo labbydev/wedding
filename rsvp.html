@@ -30,16 +30,28 @@ image: assets/imgs/photo-1449973405711-881157523e5a.jpeg
           <input id="number" type="number" name="number">
         </div>
         <div class="l-2up--1">
-          <label for="yes">
-            <input type="radio" name="rsvp" value="yes" id="yes">
+          <p class="lede">Will you be attending our wedding?</p>
+          <label for="wedding-yes">
+            <input type="radio" name="rsvp" value="wedding-yes" id="wedding-yes">
             Wouldn't miss it for the world
           </label>
-          <label for="no">
-            <input type="radio" name="rsvp" value="no" id="no">
+          <label for="wedding-no">
+            <input type="radio" name="rsvp" value="wedding-no" id="wedding-no">
             Will be there in spirit
           </label>
         </div>
         <div class="l-2up--2">
+          <p class="lede">Will you be attending the welcome party?</p>
+          <label for="welcome-yes">
+            <input type="radio" name="rsvp" value="welcome-yes" id="welcome-yes">
+            Can't wait
+          </label>
+          <label for="welcome-no">
+            <input type="radio" name="rsvp" value="welcome-no" id="welcome-no">
+            Not this time
+          </label>
+        </div>
+        <div class="l-66">
           <label for="song">We'll definitely dance if you play...</label>
           <input type="text" id="song" name="song">
           <input type="hidden" name="_next" value="/thanks.html" />
