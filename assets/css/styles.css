@@ -1714,7 +1714,7 @@ table {
   text-align: center;
 }
 
-.lede {
+.lede, .schedule {
   font-size: 18.75px;
   font-weight: 600;
   line-height: 1.6em;
@@ -1857,6 +1857,9 @@ table {
   opacity: 1;
 }
 
+.content-wrapper {
+  padding-bottom: 2em;
+}
 @media (min-width: 600px) {
   .content-wrapper {
     -webkit-transition-duration: 0.5s;
@@ -2295,7 +2298,7 @@ input[type="submit"]:focus, .profile__button:focus, .teaser__button:focus,
   }
 }
 
-.drop-cap {
+.drop-cap, .schedule__time {
   display: inline-block;
   font-family: "Petit Formal Script", cursive;
   font-size: 36.6px;
@@ -2312,6 +2315,19 @@ input[type="submit"]:focus, .profile__button:focus, .teaser__button:focus,
   float: left;
   margin-right: 1em;
   max-width: 25%;
+}
+
+.schedule {
+  list-style: none;
+}
+
+.schedule__item {
+  line-height: 2em;
+  overflow: hidden;
+}
+
+.schedule__time {
+  float: left;
 }
 
 .styleguide-header {
